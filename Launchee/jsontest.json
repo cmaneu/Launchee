@@ -1,0 +1,25 @@
+﻿{
+	"links": [
+		{
+			"title": "Calc",
+			"path": "calc.exe"
+		},
+		{
+			"title": "Dessin",
+			"path": "mspaint.exe"
+		},
+		{
+			"title": "Deezer",
+			"path": "http://www.deezer.com",
+			"category":"Internet"
+		}
+	],
+	"default": {
+
+			"title": "Coucou",
+			"path": "calc.exe",
+			"icon": "",
+			"category": ""
+		
+	}
+}
