@@ -5,8 +5,8 @@
 			"path": "calc.exe"
 		},
 		{
-			"title": "Dessin",
-			"path": "mspaint.exe"
+			"title": "DbgView",
+			"path": "C:\\sysinternals\\Dbgview.exe"
 		},
 		{
 			"title": "Deezer",

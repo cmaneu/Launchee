@@ -11,6 +11,23 @@ namespace Launchee
     /// </summary>
     public partial class App : Application
     {
+
+        public App()
+        {
+            this.DispatcherUnhandledException += App_DispatcherUnhandledException;
+            AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
+        }
+
+        void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+        {
+            ErrorReportWindow.ShowErrorReport(e.ExceptionObject as Exception);
+        }
+
+        void App_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
+        {
+            ErrorReportWindow.ShowErrorReport(e.Exception);
+        }
+
         protected override void OnActivated(EventArgs e)
         {
             base.OnActivated(e);
